@@ -18,4 +18,15 @@ public class UsersController {
     public Users getUsersByUserIdByPass(@RequestBody Users users){
         return usersService.getUsersByUserIdByPass(users);
     }
+
+    @RequestMapping( "/getUsersById" )
+    public Users getUsersById(@RequestBody Users users){
+        return usersService.getUsersById(users.getUserId());
+    }
+
+    @RequestMapping( "/saveUsers" )
+    public int saveUsers(@RequestBody Users users){
+        return usersService.saveUsers(users);
+    }
+
 }
