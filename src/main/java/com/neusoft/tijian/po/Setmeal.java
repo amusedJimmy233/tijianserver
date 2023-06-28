@@ -1,10 +1,23 @@
 package com.neusoft.tijian.po;
 
+import java.util.List;
+
 public class Setmeal {
     private Integer smId;
     private String name;
     private Integer type;
     private Integer price;
+    // 一对多
+    private List<SetmealDetailed> sdList;
+
+    public List<SetmealDetailed> getSdList() {
+        return sdList;
+    }
+
+    public void setSdList(List<SetmealDetailed> sdList) {
+        this.sdList = sdList;
+    }
+
     public Integer getSmId() {
         return smId;
     }
