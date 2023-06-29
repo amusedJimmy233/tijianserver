@@ -12,7 +12,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     name: tijian
-    url: jdbc:mysql://localhost:3306/tijian?characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/tijian?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: 123456
 
