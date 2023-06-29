@@ -4,10 +4,10 @@
 <mapper namespace="com.neusoft.tijian.mapper.SetmealMapper">
 
     <resultMap type="Setmeal" id="setmealResultMap">
-        <id column= "smId" property="smId"/>
-        <result column= "name" property="name"/>
+        <id column="smId" property="smId"/>
+        <result column="name" property="name"/>
         <result column="type" property="type"/>
-        <result column= "price" property= "price"/>
+        <result column="price" property="price"/>
         <collection property="sdList" ofType="SetmealDetailed"
             select="com.neusoft.tijian.mapper.SetmealDetailedMapper.listSetmealDetailedBySmId" column="smId">
         </collection>

@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.neusoft.tijian.mapper.SetmealDetailedMapper">
 
-    <resultMap type="SetmealDetailed" id="SetmealDetailedResultMap">
+    <resultMap type="SetmealDetailed" id="setmealDetailedResultMap">
         <id column= "sdId" property="sdId"/>
         <result column= "smId" property="smId"/>
         <result column="ciId" property="ciId"/>
@@ -11,7 +11,7 @@
                      select="com.neusoft.tijian.mapper.CheckItemMapper.getCheckItemById" column="ciId">
         </association>
     </resultMap>
-    <select id="listSetmealDetailedBySmId" parameterType="int" resultMap= "setmealResultMap">
+    <select id="listSetmealDetailedBySmId" parameterType="int" resultMap= "setmealDetailedResultMap">
         select * from setmealDetailed where smId=#{smId} order by sdId
     </select>
 </mapper>
