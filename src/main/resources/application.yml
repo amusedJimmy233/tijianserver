@@ -12,9 +12,9 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     name: tijian
-    url: jdbc:mysql://localhost:3306/tijian?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://localhost:3306/tijian?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: 123456
+    password: 12345
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

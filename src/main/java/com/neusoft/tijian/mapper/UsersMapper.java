@@ -2,6 +2,7 @@ package com.neusoft.tijian.mapper;
 
 import com.neusoft.tijian.po.Users;
 import org.apache.catalina.User;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -17,6 +18,6 @@ public interface UsersMapper {
     public Users getUsersById(String userId);
 
     // 注册
-    @Select("insert into users values(#{userId},#{password},#{realName},#{sex},#{identityCard},#{birthday},#{userType})")
+    @Insert("insert into users values(#{userId},#{password},#{realName},#{sex},#{identityCard},#{birthday},#{userType})")
     public int saveUsers(Users users);
 }
