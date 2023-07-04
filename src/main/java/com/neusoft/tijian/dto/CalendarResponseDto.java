@@ -7,6 +7,12 @@ public class CalendarResponseDto {
     private Integer existing;   //现有预约人数
     private Integer remainder;  //剩余预约人数
 
+    public CalendarResponseDto(){}
+    public CalendarResponseDto( String ymd ) {
+        this.ymd = ymd;
+    }
+
+
     public String getYmd() {
         return ymd;
     }

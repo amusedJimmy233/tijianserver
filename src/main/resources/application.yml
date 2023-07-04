@@ -14,8 +14,8 @@ spring:
     name: tijian
     url: jdbc:mysql://localhost:3306/tijian?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: 12345
+    password: 123456
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.neusoft.tijian.po
+  type-aliases-package: com.neusoft.tijian.po,com.neusoft.tijian.dto
