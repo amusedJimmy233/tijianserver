@@ -1,7 +1,6 @@
 package com.neusoft.tijian.po;
 
 public class Hospital {
-
     private Integer hpId;
     private String name;
     private String picture;
@@ -11,6 +10,14 @@ public class Hospital {
     private String deadline;
     private String rule;
     private Integer state;
+
+    public Integer getHpId() {
+        return hpId;
+    }
+
+    public void setHpId(Integer hpId) {
+        this.hpId = hpId;
+    }
 
     public String getName() {
         return name;

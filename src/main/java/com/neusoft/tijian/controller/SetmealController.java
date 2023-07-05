@@ -20,4 +20,9 @@ public class SetmealController {
     public List<Setmeal> listSetmealByType(@RequestBody Setmeal setmeal){
         return setmealService.listSetmealByType(setmeal.getType());
     }
+
+    @RequestMapping("/getSetmealById")
+    public Setmeal getSetmealById(@RequestBody Setmeal setmeal){
+        return setmealService.getSetmealById(setmeal.getSmId());
+    }
 }

@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface HospitalService {
     public List<Hospital> listHospital(Integer state);
+    public Hospital getHospitalbyId(Integer hpId);
 }
