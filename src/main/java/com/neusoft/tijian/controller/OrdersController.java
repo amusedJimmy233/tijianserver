@@ -28,7 +28,7 @@ public class OrdersController {
 
     @RequestMapping("/listOrdersByUserId")
     public List<Orders> listOrdersByUserId(@RequestBody Orders orders){
-        return ordersService.listOrdersByUserId(orders.getUserId());
+        return ordersService.listOrdersByUserId(orders);
     }
 
     @RequestMapping("/removeOrders")

@@ -24,7 +24,7 @@ public interface OrdersMapper {
     public int saveOrders (Orders orders);
 
     //根据用户编号查询预约体检订单列表
-    public List<Orders> listOrdersByUserId(String userId);
+    public List<Orders> listOrdersByUserId(Orders orders);
 
     //取消预约体检订单
     @Delete( "delete from orders where orderId=#{orderId}")
