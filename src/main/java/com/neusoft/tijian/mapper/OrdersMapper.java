@@ -3,6 +3,7 @@ package com.neusoft.tijian.mapper;
 import com.neusoft.tijian.dto.CalendarResponseDto;
 import com.neusoft.tijian.dto.OrdersMapperDto;
 import com.neusoft.tijian.po.Orders;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -21,5 +22,12 @@ public interface OrdersMapper {
     //创建体检预约订单
     @Insert("insert into orders values(null,#{orderDate},#{userId},#{HpId},#{smId},1)")
     public int saveOrders (Orders orders);
+
+    //根据用户编号查询预约体检订单列表
+    public List<Orders> listOrdersByUserId(String userId);
+
+    //取消预约体检订单
+    @Delete( "delete from orders where orderId=#{orderId}")
+    public int removeOrders(Integer orderId);
 
 }

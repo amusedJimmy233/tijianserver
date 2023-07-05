@@ -7,6 +7,16 @@ public class Orders {
     private Integer hpId;
     private Integer smId;
     private Integer state;
+    // 多对一
+    private Setmeal setmeal;
+
+    public Setmeal getSetmeal() {
+        return setmeal;
+    }
+
+    public void setSetmeal(Setmeal setmeal) {
+        this.setmeal = setmeal;
+    }
 
     public Integer getOrderId() {
         return orderId;
