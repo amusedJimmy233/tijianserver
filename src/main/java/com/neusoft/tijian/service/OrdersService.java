@@ -9,4 +9,5 @@ public interface OrdersService {
     public int saveOrders (Orders orders);
     public List<Orders> listOrdersByUserId(Orders orders);
     public int removeOrders(Integer orderId);
+    public Orders getOrdersById(Integer orderId);
 }

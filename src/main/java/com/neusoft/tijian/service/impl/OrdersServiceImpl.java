@@ -33,4 +33,9 @@ public class OrdersServiceImpl implements OrdersService {
     public int removeOrders(Integer orderId) {
         return ordersMapper.removeOrders(orderId);
     }
+
+    @Override
+    public Orders getOrdersById(Integer orderId) {
+        return ordersMapper.getOrdersById(orderId);
+    }
 }

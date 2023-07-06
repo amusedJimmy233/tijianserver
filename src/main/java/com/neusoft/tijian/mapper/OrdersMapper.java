@@ -30,4 +30,7 @@ public interface OrdersMapper {
     @Delete( "delete from orders where orderId=#{orderId}")
     public int removeOrders(Integer orderId);
 
+    @Select( "select * from orders where orderId=#{orderId}")
+    public Orders getOrdersById(Integer orderId);
+
 }
