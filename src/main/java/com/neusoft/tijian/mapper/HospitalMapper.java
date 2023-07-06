@@ -15,5 +15,5 @@ public interface HospitalMapper {
 
     //根据主键查询医院信息
     @Select("select * from hospital where hpId=#{hpId}")
-    public Hospital getHospitalbyId(Integer hpId);
+    public Hospital getHospitalById(Integer hpId);
 }

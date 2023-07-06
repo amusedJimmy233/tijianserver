@@ -20,7 +20,7 @@ public class HospitalServiceImpl implements HospitalService {
     }
 
     @Override
-    public Hospital getHospitalbyId(Integer hpId) {
-        return hospitalMapper.getHospitalbyId(hpId);
+    public Hospital getHospitalById(Integer hpId) {
+        return hospitalMapper.getHospitalById(hpId);
     }
 }

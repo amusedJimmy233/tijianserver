@@ -65,7 +65,7 @@ public class CalendarServiceImpl implements CalendarService {
         List<CalendarResponseDto> calendarList30 = ordersMapper.listAppointmentCalendar(parameList);
 
         // 根据医院编号，获取预约规则，就能获取每天最多预约人数
-        String[] strArr = hospitalMapper.getHospitalbyId(hpId).getRule().split(",");
+        String[] strArr = hospitalMapper.getHospitalById(hpId).getRule().split(",");
 
         // 继续填充calendarList30返回值中total，remainder属性
         for (CalendarResponseDto cd:calendarList30){
