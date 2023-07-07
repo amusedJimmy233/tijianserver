@@ -62,7 +62,7 @@ public class CalendarServiceImpl implements CalendarService {
 
         // 根据parameList参数，查询30天预约日期中，每一天的已预约人数
         // 查询结果CalendarResponseDto中只有两个属性ymd，existing，还有两个属性需要填充total，remainder
-        List<CalendarResponseDto> calendarList30 = ordersMapper.listAppointmentCalendar(parameList);
+        List<CalendarResponseDto> calendarList30 = ordersMapper.listOrdersAppointmentNumber(parameList);
 
         // 根据医院编号，获取预约规则，就能获取每天最多预约人数
         String[] strArr = hospitalMapper.getHospitalById(hpId).getRule().split(",");
