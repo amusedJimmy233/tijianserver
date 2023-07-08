@@ -9,6 +9,7 @@ public class Orders {
     private Integer state;
     // 多对一
     private Setmeal setmeal;
+    private Hospital hospital;
 
     public Setmeal getSetmeal() {
         return setmeal;
@@ -64,5 +65,13 @@ public class Orders {
 
     public void setState(Integer state) {
         this.state = state;
+    }
+
+    public Hospital getHospital() {
+        return hospital;
+    }
+
+    public void setHospital(Hospital hospital) {
+        this.hospital = hospital;
     }
 }

@@ -18,6 +18,9 @@
         <association property="setmeal" javaType="Setmeal"
                      select="com.neusoft.tijian.mapper.SetmealMapper.getSetmealById" column="smId">
         </association>
+        <association property="hospital" javaType="Hospital"
+                     select="com.neusoft.tijian.mapper.HospitalMapper.getHospitalById" column="hpId">
+        </association>
     </resultMap>
 
     <select id="listOrdersByUserId" parameterType="Orders" resultMap="ordersResultMap">
